@@ -11,7 +11,7 @@ module.exports.generate = (db) => {
             _.times(30, () => {
                 db.Instructor.create({
                     title: faker.name.findName(),
-                    image: 'instructors/Instructor 1_image',
+                    image: 'Person-placeholder_qztcic',
                     imageVersion: "1494446207",
                     email: faker.internet.email(),
                     shortDescription: faker.lorem.paragraph(),
