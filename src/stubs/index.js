@@ -5,3 +5,5 @@ const mock = new MockAdapter(axios);
 mock.onGet('/api/test').reply(200, {
     message: 'Test was successfull'
 });
+
+mock.onAny().passThrough();
