@@ -1,0 +1,15 @@
+#root {
+    height: 100%;
+}
+
+/*.ui.accordion .title .dropdown.icon, .ui.accordion .accordion .title .dropdown.icon{*/
+    /*display: none;*/
+/*}*/
+
+.segment-accordion .dropdown.icon {
+    display: none !important;
+}
+
+.ui[class*="very thin"].left.sidebar, .ui[class*="very thin"].right.sidebar {
+    width: 100px;
+}
