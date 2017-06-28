@@ -8,6 +8,7 @@ import NotFound from './NotFound';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {getInstructors} from '../store/actions/instructor_actions';
+import axios from 'axios';
 
 import {
     BrowserRouter as Router,
@@ -18,6 +19,10 @@ import {
 class App extends Component {
     componentWillMount(){
         this.props.getInstructors();
+        axios.get('/api/test').then((response) => {
+            console.log('It Worked');
+            console.log(response.data);
+        })
     }
 
     render() {

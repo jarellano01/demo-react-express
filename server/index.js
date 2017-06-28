@@ -10,7 +10,6 @@ import db from "./models";
 import dbSync from './dbSync';
 import path from 'path';
 
-
 if (process.env.NODE_ENV !== "production") {
     dbSync.run(db);
 }

@@ -5,6 +5,8 @@ import './index.css';
 import {Provider} from 'react-redux';
 import store from './store/store';
 import registerServiceWorker from './registerServiceWorker';
+import './stubs';
+import axios from 'axios';
 
 ReactDOM.render(
     <Provider store={store}>
