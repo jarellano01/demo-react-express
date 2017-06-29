@@ -26,14 +26,12 @@ export default (db) => {
             allowNull: true
         }
     });
-
     db.ScheduledClass.belongsTo(db.Class, {
         onDelete: "RESTRICT",
         foreignKey: {
             allowNull: true
         }
     });
-
     db.ScheduledClass.hasMany(db.ScheduleVideo);
     db.ScheduledClass.hasMany(db.ScheduleStudent);
 
