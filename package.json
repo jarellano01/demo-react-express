@@ -40,6 +40,7 @@
     "build-ui": "react-scripts build",
     "build-api": "export NODE_ENV=production; babel server -s -D -d build",
     "dev-ui": "react-scripts start",
-    "dev-api": "export NODE_ENV=development; nodemon -w server server --exec babel-node --presets es2015"
+    "dev-api": "export NODE_ENV=development; nodemon -w server server --exec babel-node --presets es2015",
+    "win-api": "set NODE_ENV=development && nodemon -w server server --exec babel-node --presets es2015"
   }
 }
