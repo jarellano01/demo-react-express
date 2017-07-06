@@ -20,7 +20,7 @@ let app = express();
 app.server = http.createServer(app);
 
 // serve public folder
-app.use(express.static('../build'));
+app.use(express.static('build'));
 
 // logger
 app.use(morgan('dev'));
@@ -38,7 +38,7 @@ api(app);
 
 // all other routes go to the build folder
 app.use('/*', (req, res) => {
-    res.sendFile(path.resolve(paths.appBuild, 'index.html'));
+    res.sendFile(path.resolve('build', 'index.html'));
 });
 
 // start server
