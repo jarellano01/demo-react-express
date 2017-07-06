@@ -19,6 +19,7 @@
     "multer": "^1.3.0",
     "mysql": "^2.13.0",
     "mysql2": "^1.3.5",
+    "nodemon": "^1.11.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
@@ -40,7 +41,7 @@
     "build-ui": "react-scripts build",
     "build-api": "export NODE_ENV=production; babel server -s -D -d build",
     "dev-ui": "react-scripts start",
-    "dev-api": "export NODE_ENV=development; nodemon -w server server --exec babel-node --presets es2015",
-    "win-api": "set NODE_ENV=development && nodemon -w server server --exec babel-node --presets es2015"
+    "dev-api": "nodemon -w server server --exec babel-node --presets es2015"
+    
   }
 }
